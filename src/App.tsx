@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LoginForm from './components/LoginForm/LoginForm';
+import 'tailwindcss/tailwind.css';
 
 const App: React.FC = () => {
   return (

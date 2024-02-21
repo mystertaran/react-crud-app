@@ -9,10 +9,11 @@
       "forceConsistentCasingInFileNames": true,
       "module": "esnext",
       "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
       "resolveJsonModule": true,
       "isolatedModules": true,
       "noEmit": true,
       "jsx": "react-jsx"
     },
-    "include": ["src/**/*.tsx", "src/**/*.ts"],
+    "include": ["src/**/*.tsx", "src/**/*.ts", "src/utils/firebase.js"],
   }

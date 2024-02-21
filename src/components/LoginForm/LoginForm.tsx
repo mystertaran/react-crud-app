@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const LoginForm: React.FC = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -7,13 +8,14 @@ const LoginForm: React.FC = () => {
   const canSubmit = email !== "" && password !== "";
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8">
+    <div className="font-sans text-gray-900 antialiased">
+      <div className="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-[#f8f4f3]">
         <div>
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-            Sign in to your account
+          <h2 className="font-bold text-3xl">
+            Sign in to your <span className="bg-[#f84525] text-white px-2 rounded-md">account</span>
           </h2>
         </div>
+        <div className="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
         <form className="mt-8 space-y-6">
           <input type="hidden" name="remember" value="true" />
           <div className="rounded-md shadow-sm -space-y-px">
@@ -60,6 +62,7 @@ const LoginForm: React.FC = () => {
             </button>
           </div>
         </form>
+        </div>
       </div>
     </div>
   );
